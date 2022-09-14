@@ -1,0 +1,47 @@
+@startuml
+class ECommerce {
+    -String nama
+    -String alamatUtama
+    -String owner
+    +DeliveryAPI deliveryType
+    +delivery(DeliveryAPI deliveryType): Void
+}
+
+interface DeliveryAPI {
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
+}
+
+class JNE {
+    -String nama
+    -String idEkspedisi
+    -String idBarang
+    -String owner
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
+}
+
+class SiCepat {
+    -String nama
+    -String idEkspedisi
+    -String idBarang
+    -String owner
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
+}
+
+class JNT {
+    -String nama
+    -String idEkspedisi
+    -String idBaramg
+    -String owner
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
+}
+
+ECommerce --> DeliveryAPI
+class JNE implements DeliveryAPI
+class JNT implements DeliveryAPI
+class SiCepat implements DeliveryAPI
+@enduml
+
