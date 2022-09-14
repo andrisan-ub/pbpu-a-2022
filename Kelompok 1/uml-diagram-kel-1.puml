@@ -1,9 +1,9 @@
 @startuml Main
 
 Ecommerce -- deliveryAPI
-deliveryAPI <|-- Sicepat
-deliveryAPI <|-- JNT
-deliveryAPI <|-- JNE
+deliveryAPI <|.. Sicepat
+deliveryAPI <|.. JNT
+deliveryAPI <|.. JNE
 
 class Ecommerce {
 + asalPengiriman String
