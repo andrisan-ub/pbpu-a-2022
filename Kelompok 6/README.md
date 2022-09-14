@@ -15,7 +15,17 @@ Jasa Pengiriman merupakan class yang memiliki atribut public idJasaPengiriman ya
 1.  **hitungOngkir(double jarak, double berat)**
 2.  **terimaRequestPemesanan(DetailPemesanan dp): Resi**
 ## 4. JNE
+JNE merupakan class turunan dari class Jasa Pengiriman sehingga memiliki atribut yang sama dengan class JasaPengiriman. Class JNE juga memiliki method yang sama dengan class Jasa Pengiriman, yaitu:
+1. **hitungOngkir(double jarak, double berat)**
+method hitungOngkir yang memiliki parameter jarak dan berat, method ini berfungsi untuk menentukan besar ongkir yang perlu dibayarkan. 
+2. **terimaRequestPemesanan(DetailPemesanan dp): Resi**
+method terimaRequestPesanan dengan parameter objek DetailPemesanan yang nantinya akan memberikan return berupa resi.
 ## 5. JNT
+JNT merupakan class turunan dari class Jasa Pengiriman sehingga memiliki atribut yang sama dengan class JasaPengiriman. Class JNT juga memiliki method yang sama dengan class Jasa Pengiriman, yaitu:
+1. **hitungOngkir(double jarak, double berat)**
+method hitungOngkir yang memiliki parameter jarak dan berat, method ini berfungsi untuk menentukan besar ongkir yang perlu dibayarkan. 
+2. **terimaRequestPemesanan(DetailPemesanan dp): Resi**
+method terimaRequestPesanan dengan parameter objek DetailPemesanan yang nantinya akan memberikan return berupa resi.
 ## 6. Si Cepat
 SiCepat merupakan class turunan dari class Jasa Pengiriman sehingga memiliki atribut yang sama dengan class JasaPengiriman. Class SiCepat juga memiliki method yang sama dengan class Jasa Pengiriman, yaitu:
 1. **hitungOngkir(double jarak, double berat)**
