@@ -57,6 +57,7 @@ JNE ..|> APIdelivery
 JNT ..|> APIdelivery
 SiCepat ..|> APIdelivery
 ECommerce --> APIdelivery
+Shipment ..|>APIdelivery
 
 Shipment *-- Order : composition
 
